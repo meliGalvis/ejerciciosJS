@@ -1,7 +1,7 @@
 const form = document.getElementById("loginForm");
 const status = document.getElementById("loginStatus");
 
-const API_URL = "http://localhost:3000/api/login";
+const API_URL = "http://control-ganadero-api.onrender.com/api/login";
 
 form.addEventListener("submit", async function(e) {
     e.preventDefault();
@@ -61,7 +61,7 @@ registerForm.addEventListener("submit", async function(e) {
     const status = document.getElementById("registerStatus");
 
     try {
-        const res = await fetch("http://localhost:3000/api/usuarios", {
+        const res = await fetch("http://control-ganadero-api.onrender.com/api/usuarios", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
